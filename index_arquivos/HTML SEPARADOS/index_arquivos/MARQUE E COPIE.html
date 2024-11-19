@@ -1,0 +1,132 @@
+﻿<p>
+*AVISO
+<!---------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
+<b id='piscando' style="transition-duration:0.5s">
+<span style="background: #42f557; border-radius:5px; padding:5px">
+AVISO
+</span>.</p>
+</b><script>
+var teste = 0;
+ setInterval(piscar, 500);
+ function piscar(){
+if(teste<1){
+teste++;
+document.getElementById('piscando').style.opacity = '1';
+} else{
+teste = 0; 
+document.getElementById('piscando').style.opacity = '0';
+}};
+</script>
+<!---------------------------------------------------------------------------------->
+
+
+
+<br/>
+<!-----------------------------------------
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_copy_clipboard2
+--------------------------------------------->
+<!--##############################################################################-->
+<!---------------------------------------------------------------------------------->
+<center><FONT SIZE=+4><FONT COLOR="RED"><b>
+SENHA⚫
+</b></FONT></FONT><BR/>
+<!--##############################################################################-->
+<!--##############################################################################-->
+<!--##############################################################################-->
+<!--##############################################################################-->
+<!DOCTYPE html><html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1"><style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+</style></head><body>
+<!--##############################################################################-->
+<!--##############################################################################-->
+<!--##############################################################################-->
+<input type="text" value="
+SENHA⚫
+" id="myInput">
+<div class="tooltip">
+<button onclick="myFunction()" onmouseout="outFunc()">
+<span class="tooltiptext" id="myTooltip">Clique para copiar a senha</span>
+Clique para copiar a senha
+</button></div>
+<!--##############################################################################-->
+<!--##############################################################################-->
+<!--##############################################################################-->
+<script>
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);  
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "SENHA COPIADA: " + copyText.value;
+}
+function outFunc() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy to clipboard";
+}
+</script></body></html></center>
+<!---------------------------------------------------------------------------------->
+<hr class="new1">
+<!---------------------------------------------------------------------------------->
+
+
+
+<br/>
+<!-----------------------------------------
+https://www.htmlprogressivo.net/2014/01/Campos-de-selecao-Radio-Button-Checkbox-em-Formularios.html
+--------------------------------------------->
+<input type="checkbox" name="opcoes" value="html"/> HTML<br />
+<input type="checkbox" name="opcoes" value="css"/> CSS<br />
+<input type="checkbox" name="opcoes" value="javascript"/> JavaScript<br />
+<input type="checkbox" name="opcoes" value="php"/> PHP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
